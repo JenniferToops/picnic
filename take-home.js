@@ -9,8 +9,6 @@ function generateGardenGrid(x, y) {
         gardenGrid.push({coordinateX: i, coordinateY: j, watered: false})
       }
     }
-  
-
 }
 //fill garden
 generateGardenGrid(x, y)
@@ -35,7 +33,7 @@ function waterGarden(days){
   }
   
   //conditional with base case where all 100 plants are watered;
-  //else, run function again and add another day (assuming one day per square watered)
+  //else, run function again and add another day (assuming one day per square watered) until the wateredGrid length is 100
   if (wateredGrid.length >= 100) { 
     return `It took ${days} days to water all the plants.`
   } else {
